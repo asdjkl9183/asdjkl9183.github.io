@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>商品购买</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/product.css" />
+    <link rel="stylesheet" type="text/css" href="css/pro2.css" />
+    <script src="js/flex.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/ratchet.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav"> <a class="icon icon-left-nav pull-left"></a> <a
+            class="icon icon-more-vertical pull-right"></a>
+        <h1 class="title">订单已完成</h1>
+    </header>
+    <div id="content">
+        <div class="scroller">
+            <div id="p-summary" class="page">
+                <div class="container">
+                    <section id="s-showcase">
+                        <div class="scroller">
+                            <div class="itbox main"> <a class="item"> <img src="images/banner3.png" alt="" /> </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="s-from" class="mui-flex"> </section>
+                    <section id="s-title">
+                        <div class="main">
+                            <h1>森松尼T-M30有线电脑游戏鼠标USB台式笔记本发光大鼠标电竞家用</h1>
+                        </div>
+                        <div class="sub">
+                            <div class="slogon"></div>
+                        </div>
+                    </section>
+                    <br/>
+                    <section id="s-price"> <span class="mui-price big">  <span
+                                class="mui-price-integer">收款金额：<i class="mui-price-rmb">&yen;</i>800.00</span> <span class="mui-price-decimal"></span>
+                        </span> </section><br/>
+                    <section id="s-price"> <span class="mui-price big">  <span
+                            class="mui-price-integer">银行卡号：xxxxxxxxxxxxxxxxxxx</span> <span class="mui-price-decimal"></span>
+                    </span> </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">$(function () {
+        $(".clickwn").click(function () { $(".flick-menu-mask").show(); $(".spec-menu").show(); })
+        $(".tclck").click(function () { $(".flick-menu-mask").hide(); $(".spec-menu").hide(); })
+        $('#cool').bind('input propertychange', function () {
+            $('.amount').html(this.value)
+        }).bind('input input', function () { }); $('#color a').click(function () { var cook = $(this).index(); $('#color a').eq(cook).addClass('selected').siblings().removeClass('selected'); })
+        $(function () {
+            $(".jia").click(function () {
+                var $parent = $(this).parent(".num"); var $num = window.Number($(".inputBorder", $parent).val()); $(".inputBorder", $parent).val($num + 1); $('.amount').html($num + 1)
+            }); $(".jian").click(function () {
+                var $parent = $(this).parent(".num"); var $num = window.Number($(".inputBorder", $parent).val()); if ($num > 2) {
+                    $(".inputBorder", $parent).val($num - 1); $('.amount').html($num - 1)
+                } else {
+                    $(".inputBorder", $parent).val(1); $('.amount').html($num)
+                }
+            });
+        })
+    })
+</script>
+
+</html>
